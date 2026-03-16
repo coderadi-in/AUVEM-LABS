@@ -13,8 +13,95 @@
 <body>
     {% include 'components/header.html' %}
     
-    <main class="main column gap-96">
+    <main class="main column">
+        <section class="hero">
+            <section class="section p-96 column gap-20">
+                <span class="text uppercase">auvem labs</span>
+                <h1 class="h1 fs-96">engineering ascent</h1>
 
+                <span class="symbol animated-arrow">keyboard_arrow_down</span>
+            </section>
+        </section>
+
+        <section class="branding">
+            <section class="section p-48 column gap-48">
+                <div class="statement grid gap-48">
+                    <div class="text-content column gap-20 h-center">
+                        <span class="text uppercase text-muted">a new era of elegance</span>
+                        <h1 class="h1">We build high-end business website for serious businesses.</h1>
+                        
+                        <a href="/work/" class="link btn fl pv-12 ph-32 mt-24 rounded-16">
+                            <span class="mini uppercase">work with us</span>
+                        </a>
+                    </div>
+
+                    <div class="image-content">
+                        <img src="{{ url_for('static', filename='assets/images/branding-elegancy.png') }}" alt="THE COVER PAGE OF SPEC MODEL CD-2601" class="img rounded-16">
+                    </div>
+                </div>
+
+                <div class="statement grid gap-48">
+                    <div class="image-content">
+                        <img src="{{ url_for('static', filename='assets/images/branding-method.png') }}" alt="IMAGE SHOWING HOW WE HANDLE CLIENT PROJECTS" class="img rounded-16">
+                    </div>
+
+                    <div class="text-content column gap-20 h-center">
+                        <span class="text uppercase text-muted">the method</span>
+                        <h1 class="h1">Explore how we provide high-end solutions to businesses.</h1>
+                        
+                        <a href="/engineering-greatness/articles/the-method" class="link btn fl pv-12 ph-32 mt-24 rounded-16">
+                            <span class="mini uppercase">explore more</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="featured">
+            <section class="section p-48 column gap-48">
+                <h1 class="h1 fs-48">auvem featured</h1>
+
+                <div class="grid gap-48">
+                    <div class="project column">
+                        <div class="image-content">
+                            <img src="{{ url_for('static', filename='assets/images/featured-cd-2601.png') }}" alt="COVER IMAGE" class="img rounded-16 shadow-sm">
+                        </div>
+
+                        <div class="text-content column gap-12 p-20">
+                            <span class="mini uppercase text-muted">avenue imports &bull; cd-2601</span>
+                            <h1 class="h1">a high-end luxury dealership site for car dealers.</h1>
+
+                            <div class="tags row gap-12">
+                                <a target="_blank" href="https://avenueimports.coderadi.in/" class="link btn fl pv-12 ph-32 rounded-16">
+                                    <span class="text uppercase">view live</span>
+                                </a>
+
+                                <span class="text uppercase highlight">spec model</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project column">
+                        <div class="image-content">
+                            <img src="{{ url_for('static', filename='assets/images/featured-st-2603.png') }}" alt="COVER IMAGE" class="img rounded-16 shadow-sm">
+                        </div>
+
+                        <div class="text-content column gap-12 p-20">
+                            <span class="mini uppercase text-muted">seller tool &bull; st-2603</span>
+                            <h1 class="h1">a user friendly software tool for e-com sellers.</h1>
+
+                            <div class="tags row gap-12">
+                                <a target="_blank" href="https://sellertool.markrtd.com/" class="link btn fl pv-12 ph-32 rounded-16">
+                                    <span class="text uppercase">view live</span>
+                                </a>
+
+                                <span class="text uppercase highlight">patron model</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
 </body>
 </html>

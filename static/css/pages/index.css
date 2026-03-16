@@ -1,0 +1,46 @@
+/* ================================================== */
+/* HERO */
+/* ================================================== */
+
+.hero {
+    background-image: url('/static/assets/images/index-hero.png');
+    background-size: cover;
+    
+    position: fixed;
+    z-index: -1;
+
+    height: 100dvh;
+    width: 100vw;
+}
+
+.hero .section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: fit-content;
+    width: min(100%, 700px);
+}
+
+/* ================================================== */
+/* BRANDING */
+/* ================================================== */
+
+.branding {
+    background-color: var(--color-bg-card);
+    border-radius: 48px 48px 0 0;
+    margin-top: 100dvh;
+}
+
+.branding .statement {
+    grid-template-columns: repeat(auto-fit, minmax(min(768px, 100%), 1fr));
+}
+
+/* ================================================== */
+/* FEATURED */
+/* ================================================== */
+
+.featured { background-color: var(--color-bg-main); }
+
+.featured .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+}

@@ -5,6 +5,7 @@
 .header {
     position: fixed;
     width: 100%;
+    z-index: 8;
     backdrop-filter: blur(8px);
 }
 
@@ -20,6 +21,8 @@
 
 .nav {
     position: fixed;
+    z-index: 12;
+    
     width: min(700px, 80vw);
     height: 100dvh;
 

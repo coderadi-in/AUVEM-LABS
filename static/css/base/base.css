@@ -6,6 +6,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 /* ================================================== */
+/* KEYFRAMES */
+/* ================================================== */
+
+@keyframes animatedArrowAnimation {
+    0%, 100% { transform: translateY(0) }
+    50% { transform: translateY(-48px) }
+}
+
+.animated-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    right: 50%;
+    animation: animatedArrowAnimation 2s cubic-bezier(0.7,0.1,0.5,0.9) infinite;
+}
+
+/* ================================================== */
 /* BASIC */
 /* ================================================== */
 
@@ -56,6 +73,10 @@ html { scroll-behavior: smooth; }
     height: 100%;
     width: 100%;
     margin: 0 auto;
+}
+
+@media (max-width: 568px) {
+    .section { padding: 20px !important; }
 }
 
 /* ================================================== */
@@ -160,6 +181,8 @@ html { scroll-behavior: smooth; }
 .p-20 { padding: 20px; }
 .p-24 { padding: 24px; }
 .p-32 { padding: 32px; }
+.p-48 { padding: 48px; }
+.p-96 { padding: 96px; }
 
 .ph-4 { padding-left: 4px; padding-right: 4px; }
 .ph-8 { padding-left: 8px; padding-right: 8px; }
@@ -200,15 +223,16 @@ html { scroll-behavior: smooth; }
 .capitalize { text-transform: capitalize; }
 .normal-case { text-transform: none; }
 
-.fs-12 { font-size: 12px; }
-.fs-16 { font-size: 16px; }
-.fs-20 { font-size: 20px; }
-.fs-24 { font-size: 24px; }
-.fs-32 { font-size: 32px; }
-.fs-36 { font-size: 36px; }
-.fs-48 { font-size: min(48px, 15vw); }
-.fs-64 { font-size: min(64px, 20vw); }
-.fs-128 { font-size: min(128px, 25vw); }
+.fs-12 { font-size: 12px !important; }
+.fs-16 { font-size: 16px !important; }
+.fs-20 { font-size: 20px !important; }
+.fs-24 { font-size: 24px !important; }
+.fs-32 { font-size: 32px !important; }
+.fs-36 { font-size: 36px !important; }
+.fs-48 { font-size: min(48px, 15vw) !important; }
+.fs-64 { font-size: min(64px, 20vw) !important; }
+.fs-96 { font-size: min(96px, 22vw) !important; }
+.fs-128 { font-size: min(128px, 25vw) !important; }
 
 .fw-400 { font-weight: 400; }
 .fw-500 { font-weight: 500; }
@@ -268,7 +292,7 @@ html { scroll-behavior: smooth; }
     letter-spacing: 2px;
 }
 
-.highlight { color: var(--color-accent-main); }
+.highlight { color: var(--color-accent-alt); }
 
 /* ================================================== */
 /* BORDER */
@@ -312,6 +336,7 @@ textarea.input {
     cursor: pointer;
     border: none;
     text-align: center;
+    width: fit-content;
 }
 
 .ot {
