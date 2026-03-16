@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/components/header.css') }}">
+
+<header class="header">
+    <section class="section content grid cols-3 p-20">
+        <div class="menu-btn open row gap-12 link">
+            <span class="symbol">menu</span>
+            <span class="text title">Menu</span>
+        </div>
+
+        <a href="/" class="link center">
+            <img src="{{ url_for('static', filename='assets/icons/logo.png') }}" alt="AUVEM" class="logo">
+        </a>
+
+        <ul class="list row gap-12 h-en">
+            <li><a href="mailto:contact@auvemlabs.co.in" class="link">
+                    <span class="symbol">mail</span>
+                </a></li>
+            <li><a href="/engineering-ascent/" class="link">
+                    <span class="symbol">folder_code</span>
+                </a></li>
+        </ul>
+    </section>
+</header>
+
+<nav class="nav column h-sb gap-20 p-20 hidden">
+    <div class="menu-btn row gap-12 link">
+        <span class="symbol">close</span>
+        <span class="text">Close</span>
+    </div>
+
+    <div class="links column gap-12 text-right">
+        <a href="/engineering-ascent/" class="link uppercase">engineering ascent</a>
+        <a href="/spec-models/" class="link uppercase">spec models</a>
+        <a href="/work/" class="link uppercase">work with us</a>
+        <a href="/about/" class="link uppercase">about us</a>
+        <a href="/contact/" class="link uppercase">contact</a>
+    </div>
+
+    <span class="text uppercase">auvem labs</span>
+</nav>
+
+<script src="{{ url_for('static', filename='js/components/header.js') }}"></script>
